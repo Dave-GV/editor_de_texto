@@ -1,0 +1,75 @@
+/*
+ * Paleta oscura calcada de una captura real de Gmail en modo oscuro (referencia
+ * dada por el usuario). Conclusión clave al mirarla: Gmail en oscuro casi no
+ * usa color de acento — es prácticamente monocromático (gris oscuro + texto
+ * blanco). "Redactar" y el ítem "Recibidos" seleccionado son simplemente gris
+ * claro/blanco sobre gris oscuro, sin tinte rojo ni azul. El único color vivo
+ * en toda la captura es el logo multicolor y el ícono de Gemini — nada que
+ * replicar aquí. El rojo solo aparece en contenido de advertencia real
+ * (ej. "Suspensión de contrato"), así que se conserva para el estado de error.
+ * Los nombres de variable se mantienen (--ads-*) para no tocar cada componente.
+ */
+:root {
+  --ads-color-background-brand-bold: #e8eaed;
+  --ads-color-background-brand-bold-hovered: #d3d3d3;
+  --ads-color-background-brand-bold-pressed: #bdbdbd;
+  --ads-color-background-neutral: rgba(232, 234, 237, 0.06);
+  --ads-color-background-neutral-hovered: rgba(232, 234, 237, 0.12);
+  --ads-color-background-neutral-pressed: rgba(232, 234, 237, 0.18);
+  --ads-color-background-neutral-subtle: #00000000;
+  --ads-color-background-input: #28292c;
+  --ads-color-background-input-hovered: #303134;
+  --ads-color-background-input-pressed: #28292c;
+  --ads-color-background-accent-red-subtler: rgba(242, 139, 130, 0.16);
+  --ads-color-background-accent-green-subtler: rgba(129, 201, 149, 0.16);
+  --ads-color-background-selected: rgba(232, 234, 237, 0.14);
+  --ads-color-background-selected-hovered: rgba(232, 234, 237, 0.2);
+  --ads-color-background-selected-pressed: rgba(232, 234, 237, 0.26);
+  --ads-color-background-disabled: rgba(232, 234, 237, 0.12);
+  --ads-color-text: #e8eaed;
+  --ads-color-text-subtle: #bdc1c6;
+  --ads-color-text-subtlest: #9aa0a6;
+  --ads-color-text-inverse: #202124;
+  --ads-color-text-brand: #e8eaed;
+  --ads-color-text-danger: #f2b8b5;
+  --ads-color-text-selected: #e8eaed;
+  --ads-color-text-disabled: rgba(232, 234, 237, 0.38);
+  --ads-color-border-disabled: rgba(232, 234, 237, 0.12);
+  --ads-color-link: #e8eaed;
+  --ads-color-link-pressed: #ffffff;
+  --ads-color-border: #3c4043;
+  --ads-color-border-input: #5f6368;
+  --ads-color-border-focused: #8ab4f8;
+  --ads-color-border-bold: #9aa0a6;
+  --ads-color-icon: #e8eaed;
+  --ads-color-icon-subtle: #9aa0a6;
+  --ads-color-icon-brand: #e8eaed;
+  --ads-elevation-surface: #202124;
+  --ads-elevation-surface-hovered: #28292c;
+  --ads-elevation-surface-pressed: #303134;
+  --ads-elevation-surface-raised: #28292c;
+  --ads-elevation-surface-overlay: #303134;
+  --ads-elevation-surface-sunken: #17181a;
+  --ads-color-blanket: rgba(0, 0, 0, 0.6);
+  --ads-space-025: 2px;
+  --ads-space-050: 4px;
+  --ads-space-075: 6px;
+  --ads-space-100: 8px;
+  --ads-space-150: 12px;
+  --ads-space-200: 16px;
+  --ads-space-250: 20px;
+  --ads-space-300: 24px;
+  --ads-space-400: 32px;
+  --ads-radius-small: 8px;
+  --ads-radius-medium: 16px;
+  --ads-radius-large: 24px;
+  --ads-radius-pill: 999px;
+  --ads-border-width: 1px;
+  --ads-border-width-selected: 2px;
+  --ads-border-width-focused: 2px;
+  --ads-font-family-body: Roboto, system-ui, -apple-system, "Segoe UI", Ubuntu, "Helvetica Neue", sans-serif;
+  --ads-font-family-heading: Roboto, system-ui, -apple-system, "Segoe UI", Ubuntu, "Helvetica Neue", sans-serif;
+  --ads-font-family-code: ui-monospace, Menlo, "Segoe UI Mono", "Ubuntu Mono", monospace;
+  --ads-elevation-shadow-raised: 0px 1px 2px rgba(0, 0, 0, 0.4), 0px 1px 3px 1px rgba(0, 0, 0, 0.25);
+  --ads-elevation-shadow-overlay: 0px 4px 8px rgba(0, 0, 0, 0.4), 0px 8px 16px rgba(0, 0, 0, 0.3);
+}

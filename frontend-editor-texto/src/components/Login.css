@@ -1,0 +1,174 @@
+@import "../styles/material-tokens.css";
+
+.google-login-screen {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--md-surface);
+  font-family: var(--md-font);
+  padding: var(--md-shape-m);
+  box-sizing: border-box;
+}
+
+.google-login-card {
+  width: 100%;
+  max-width: 448px;
+  background-color: var(--md-surface-container-high);
+  border-radius: var(--md-shape-xl);
+  box-shadow: var(--md-elevation-3);
+  padding: 48px 40px 32px;
+  box-sizing: border-box;
+}
+
+.google-login-header {
+  text-align: center;
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.google-login-logo {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--md-shape-m);
+  background-color: var(--md-primary);
+  color: var(--md-on-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.google-login-title {
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--md-on-surface);
+  margin: 0;
+}
+
+.google-login-subtitle {
+  font-size: 14px;
+  color: var(--md-on-surface-variant);
+  margin: 0;
+}
+
+.google-login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.google-field {
+  position: relative;
+}
+
+.google-input {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: var(--md-surface-container-highest);
+  border: none;
+  border-bottom: 1px solid var(--md-outline);
+  border-radius: var(--md-shape-xs) var(--md-shape-xs) 0 0;
+  padding: 20px 16px 8px;
+  font-family: var(--md-font);
+  font-size: 16px;
+  color: var(--md-on-surface);
+  outline: none;
+}
+
+.google-input::placeholder {
+  color: transparent;
+}
+
+.google-input:hover {
+  border-bottom-color: var(--md-on-surface);
+}
+
+.google-input:focus {
+  border-bottom: 2px solid var(--md-primary);
+  padding-bottom: 7px;
+}
+
+.google-label {
+  position: absolute;
+  left: 16px;
+  top: 20px;
+  font-size: 16px;
+  color: var(--md-on-surface-variant);
+  pointer-events: none;
+  transition: top 0.15s ease, font-size 0.15s ease, color 0.15s ease;
+}
+
+.google-input:focus + .google-label,
+.google-input:not(:placeholder-shown) + .google-label {
+  top: 6px;
+  font-size: 12px;
+}
+
+.google-input:focus + .google-label {
+  color: var(--md-primary);
+}
+
+.google-error {
+  font-size: 12px;
+  color: var(--md-error);
+  margin: -8px 0 0;
+}
+
+.google-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 4px;
+}
+
+.google-button-text {
+  background: none;
+  border: none;
+  color: var(--md-primary);
+  font-family: var(--md-font);
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px 12px;
+  border-radius: var(--md-shape-full);
+  cursor: pointer;
+}
+
+.google-button-text:hover {
+  background-color: rgba(208, 188, 255, 0.08);
+}
+
+.google-button-filled {
+  background-color: var(--md-primary);
+  color: var(--md-on-primary);
+  border: none;
+  font-family: var(--md-font);
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  padding: 0 24px;
+  border-radius: var(--md-shape-full);
+  cursor: pointer;
+}
+
+.google-button-filled:hover {
+  box-shadow: var(--md-elevation-1);
+}
+
+.google-button-filled:disabled {
+  background-color: rgba(230, 224, 233, 0.12);
+  color: rgba(230, 224, 233, 0.38);
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.google-login-nota {
+  margin: 24px 0 0;
+  font-size: 12px;
+  color: var(--md-on-surface-variant);
+  text-align: center;
+}
